@@ -6,7 +6,7 @@ module.exports={
         const {page = 1 } = request.query; /**buscando os dados da pagina 1 */
 
         const [count] = await connection('incidents').count(); /**pegando o total de casos */
-         /**realizando teste */
+        
 
         const incidents = await connection('incidents')
         .join('ongs','ongs.id','=','incidents.ong_id')
