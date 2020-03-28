@@ -7,7 +7,7 @@ module.exports={
 
         const [count] = await connection('incidents').count(); /**pegando o total de casos */
         
-
+        /**teste */
         const incidents = await connection('incidents')
         .join('ongs','ongs.id','=','incidents.ong_id')
         .limit(5)
