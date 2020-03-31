@@ -8,6 +8,7 @@ const routes = express.Router();//desacoplando o modo de rotas do Express em uma
 
 routes.post('/sessions',SessionController.create);
 
+
 routes.get('/ongs',OngController.index);
 routes.post('/ongs',OngController.create);
 
